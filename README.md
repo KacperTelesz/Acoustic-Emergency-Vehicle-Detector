@@ -1,8 +1,12 @@
-# Acoustic Emergency Vehicle Detector 🚑🚓🚒
+# Acoustic Emergency Vehicle Detector
 
 This repository contains the source code for a real-time machine learning system designed to acoustically detect emergency vehicles (ambulances, police cars, fire engines) using a Raspberry Pi. 
 
 This project was developed as part of a Master's Thesis and serves as a practical demonstration of end-to-end ML deployment on edge devices.
+
+## Watch Demo on YouTube! 
+
+https://www.youtube.com/watch?v=fpkjyRfE9QY
 
 ## Project Overview
 
@@ -13,7 +17,7 @@ To ensure robustness and compare different approaches, three distinct machine le
 2. **Convolutional Neural Network (CNN)** - a custom architecture trained on Log-Mel Spectrograms.
 3. **YAMNet (Transfer Learning)** - utilizing Google's pre-trained audio event classifier combined with a custom dense classification head.
 
-## 🛠️ Hardware Requirements
+## Hardware Requirements
 * **Raspberry Pi 4 Model B**
 * **INMP441** Omnidirectional I2S MEMS Microphone
 * **SSD1306** I2C OLED Display (128x32)
@@ -22,7 +26,7 @@ To ensure robustness and compare different approaches, three distinct machine le
 ## Repository Structure
 
 The project is divided into logical components separating model training (intended for a PC) from real-time inference (intended for the Raspberry Pi).
-
+```text
 ├── rpi_deployment/        # Real-time inference scripts for Raspberry Pi
 │   ├── run_cnn.py
 │   ├── run_svm.py
@@ -37,7 +41,7 @@ The project is divided into logical components separating model training (intend
 ├── assets/                # Fonts and static assets for the OLED display
 ├── requirements-training.txt # Python dependencies for model training (PC)
 └── requirements-rpi.txt      # Python dependencies for inference (Raspberry Pi)
-
+```
 ## Quick Start
 
 ### 1. Model Training (PC / Server)
