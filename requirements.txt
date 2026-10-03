@@ -1,0 +1,15 @@
+numpy==1.26.4
+scipy==1.13.1
+librosa==0.10.2
+scikit-learn==1.5.0
+joblib==1.4.2
+matplotlib==3.9.0
+tensorflow==2.16.1
+keras==3.4.1
+tensorflow-hub==0.16.1
+ 
+# Only Raspberry Pi (live detector)
+pyaudio==0.2.14
+Adafruit-Blinka==8.41.0
+circuitpython-ssd1306==2.12.19
+Pillow==10.4.0
